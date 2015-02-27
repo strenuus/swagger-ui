@@ -1132,6 +1132,12 @@
 .swagger-section .api-popup-actions {
   padding-top: 10px;
 }
+body {
+  padding-top: 90px;
+}
+.swagger-section .info_title {
+  color: #fdc331;
+}
 .swagger-section .access {
   float: right;
 }
@@ -1193,21 +1199,23 @@
   cursor: pointer;
 }
 .swagger-section #header {
-  background-color: #89bf04;
+  background-color: #4ab6de;
   padding: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .swagger-section #header a#logo {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
-  background: transparent url(../images/logo_small.png) no-repeat left center;
-  padding: 20px 0 20px 40px;
   color: white;
 }
 .swagger-section #header form#api_selector {
   display: block;
   clear: none;
   float: right;
+  padding-top: 23px;
 }
 .swagger-section #header form#api_selector .input {
   display: block;
@@ -1221,6 +1229,14 @@
 .swagger-section #header form#api_selector .input input#input_baseUrl {
   width: 400px;
 }
+.swagger-section #header form#api_selector .input label {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 0 0 8px;
+  font-size: 0.9em;
+  color: white;
+}
 .swagger-section #header form#api_selector .input a#explore {
   display: block;
   text-decoration: none;
@@ -1228,7 +1244,7 @@
   padding: 6px 8px;
   font-size: 0.9em;
   color: white;
-  background-color: #547f00;
+  background-color: #57bfe6;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -1237,7 +1253,7 @@
   border-radius: 4px;
 }
 .swagger-section #header form#api_selector .input a#explore:hover {
-  background-color: #547f00;
+  background-color: #57bfe6;
 }
 .swagger-section #header form#api_selector .input input {
   font-size: 0.9em;

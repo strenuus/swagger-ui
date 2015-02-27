@@ -2,8 +2,19 @@
 @import 'src/main/less/specs.less';
 @import 'src/main/less/auth.less';
 
+@brandBlue: #57bfe6;
+@brandLightBlue: #4ab6de;
+@brandOrange: #fdc331;
+
+body {
+    padding-top: 90px;
+}
+
 .swagger-section {
 
+.info_title {
+    color: @brandOrange;
+}
 .access {
     float: right;
 }
@@ -72,20 +83,22 @@
 }
 
 #header {
-    background-color: #89bf04;
+    background-color: @brandLightBlue;
     padding: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     a#logo {
         font-size: 1.5em;
         font-weight: bold;
         text-decoration: none;
-        background: transparent url(../images/logo_small.png) no-repeat left center;
-        padding: 20px 0 20px 40px;
         color: white;
     }
     form#api_selector {
         display: block;
         clear: none;
         float: right;
+        padding-top: 23px;
         .input {
             display: block;
             clear: none;
@@ -97,6 +110,14 @@
             input#input_baseUrl {
                 width: 400px;
             }
+            label {
+                display: block;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 0 0 8px;
+                font-size: 0.9em;
+                color: white;
+            }
             a#explore {
                 display: block;
                 text-decoration: none;
@@ -104,7 +125,7 @@
                 padding: 6px 8px;
                 font-size: 0.9em;
                 color: white;
-                background-color: #547f00;
+                background-color: @brandBlue;
                 -moz-border-radius: 4px;
                 -webkit-border-radius: 4px;
                 -o-border-radius: 4px;
@@ -113,7 +134,7 @@
                 border-radius: 4px;
             }
             a#explore:hover {
-                background-color: #547f00;
+                background-color: @brandBlue;
             }
             input {
                 font-size: 0.9em;
